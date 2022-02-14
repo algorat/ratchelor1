@@ -192,8 +192,8 @@ class RoseCeremony extends React.Component {
     let backRatsList = [];
     // Create a clickable div for every rat in the game
     for (let i = 0; i < this.backRowRats.length; i++) {
-      let filename = `/ratchelor/img/Characters/${this.backRowRats[i].filename}.png`;
-      let roseFilename = `/ratchelor/img/Characters/roses/${this.backRowRats[i].filename}.png`;
+      let filename = `/ratchelor1/img/Characters/${this.backRowRats[i].filename}.png`;
+      let roseFilename = `/ratchelor1/img/Characters/roses/${this.backRowRats[i].filename}.png`;
       backRatsList.push(
         
         <div
@@ -225,8 +225,8 @@ class RoseCeremony extends React.Component {
     let frontRatsList = [];
     // Create a clickable div for every rat in the game
     for (let i = 0; i < this.frontRowRats.length; i++) {
-      let filename = `/ratchelor/img/Characters/${this.frontRowRats[i].filename}.png`;
-      let roseFilename = `/ratchelor/img/Characters/roses/${this.frontRowRats[i].filename}.png`;
+      let filename = `/ratchelor1/img/Characters/${this.frontRowRats[i].filename}.png`;
+      let roseFilename = `/ratchelor1/img/Characters/roses/${this.frontRowRats[i].filename}.png`;
 
       frontRatsList.push(
         <div
@@ -268,7 +268,7 @@ class RoseCeremony extends React.Component {
         <img
           id="bouquet"
           alt="a rose bouquet"
-          src={`/ratchelor/img/Bouquet/bouquet${bouquetNum}.png`}
+          src={`/ratchelor1/img/Bouquet/bouquet${bouquetNum}.png`}
         ></img>
         <div id="instructions">{this.state.instructions}</div>
         <div id="ratListContainer">

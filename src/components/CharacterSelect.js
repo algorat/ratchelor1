@@ -10,7 +10,7 @@ class CharacterImg extends React.Component {
         {this.props.selected && (
           <img
             alt=""
-            src="/ratchelor/img/Frames/hearts7.PNG"
+            src="/ratchelor1/img/Frames/hearts7.PNG"
             className="selected-bg"
           />
         )}
@@ -65,7 +65,7 @@ class CharacterSelect extends React.Component {
           <img
             alt=""
             id="hearts-header"
-            src="/ratchelor/img/Player/playerselecthearts.png"
+            src="/ratchelor1/img/Player/playerselecthearts.png"
           ></img>
           <div id="ratchelor-intro-title">You are The Ratchelor,</div>
           <div id="ratchelor-intro">
@@ -85,7 +85,7 @@ class CharacterSelect extends React.Component {
                   this.props.playTap();
                 }}
                 key={`char${idx}`}
-                src={`/ratchelor/img/Player/${idx + 1}_intro.png`}
+                src={`/ratchelor1/img/Player/${idx + 1}_intro.png`}
               />
             ))}
         </div>

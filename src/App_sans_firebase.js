@@ -489,7 +489,7 @@ class RatchelorGame extends React.Component {
           playTadaSound={this.playTadaSound}
           playChimesSound={this.playChimesSound}
           playWobbleSound={this.playWobbleSound}
-          playerRatUrl={`/ratchelor/img/Player/${this.state.playerIdx}.png`}
+          playerRatUrl={`/ratchelor1/img/Player/${this.state.playerIdx}.png`}
           goToRoseCeremony={() =>
             {this.beginInterludeAndAdvanceState(
               `who gets a rose?`,
@@ -552,7 +552,7 @@ class RatchelorGame extends React.Component {
       screen = (
         <Proposal
           finalRat={this.finalRat}
-          playerRatUrl={`/ratchelor/img/Player/${this.state.playerIdx}_proposal.PNG`}
+          playerRatUrl={`/ratchelor1/img/Player/${this.state.playerIdx}_proposal.PNG`}
           advanceState={() => {
             this.setState({ gameStage: ANIME_ENDING });
           }}
@@ -613,7 +613,7 @@ class RatchelorGame extends React.Component {
           <img
             id="mobile-img"
             alt="a rat who loves you"
-            src={`/ratchelor/img/Characters/${randoRatFilename}.png`}
+            src={`/ratchelor1/img/Characters/${randoRatFilename}.png`}
           ></img>
         </div>
       );
@@ -622,7 +622,7 @@ class RatchelorGame extends React.Component {
       <div id={`game-container`} className={`preloading-${isPreloading}`}>
 
         <div id="game">
-          <img id="frame" src="/ratchelor/img/frameSmaller.png" alt=""></img>
+          <img id="frame" src="/ratchelor1/img/frameSmaller.png" alt=""></img>
           {safariMsg}
 
           <div id="interludeContainer" >

@@ -182,7 +182,7 @@ class RatchelorGame extends React.Component {
       let filename = "";
       if (fullFilename.indexOf("public") !== -1) {
         filename = fullFilename.slice(7);
-        filename = "/ratchelor/" + filename;
+        filename = "/ratchelor1/" + filename;
       }
       // Load image
       img.src = filename;
@@ -489,7 +489,7 @@ class RatchelorGame extends React.Component {
           playTadaSound={this.playTadaSound}
           playChimesSound={this.playChimesSound}
           playWobbleSound={this.playWobbleSound}
-          playerRatUrl={`/ratchelor/img/Player/${this.state.playerIdx}.png`}
+          playerRatUrl={`/ratchelor1/img/Player/${this.state.playerIdx}.png`}
           goToRoseCeremony={() =>
             {this.beginInterludeAndAdvanceState(
               `who gets a rose?`,
@@ -552,7 +552,7 @@ class RatchelorGame extends React.Component {
       screen = (
         <Proposal
           finalRat={this.finalRat}
-          playerRatUrl={`/ratchelor/img/Player/${this.state.playerIdx}_proposal.PNG`}
+          playerRatUrl={`/ratchelor1/img/Player/${this.state.playerIdx}_proposal.PNG`}
           advanceState={() => {
             this.setState({ gameStage: ANIME_ENDING });
           }}
@@ -613,7 +613,7 @@ class RatchelorGame extends React.Component {
           <img
             id="mobile-img"
             alt="a rat who loves you"
-            src={`/ratchelor/img/Characters/${randoRatFilename}.png`}
+            src={`/ratchelor1/img/Characters/${randoRatFilename}.png`}
           ></img>
         </div>
       );
@@ -622,8 +622,7 @@ class RatchelorGame extends React.Component {
       <div id={`game-container`} className={`preloading-${isPreloading}`}>
 
         <div id="game">
-          <img id="frame" src="/ratchelor/img/frameSmaller.png" alt=""></img>
-          <div id="ratchelor2">Stay tuned for The Ratchelor 2, coming this Valentine's Day! </div>
+          <img id="frame" src="/ratchelor1/img/frameSmaller.png" alt=""></img>
 
           {safariMsg}
 

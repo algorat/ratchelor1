@@ -151,7 +151,7 @@ class SpecialEnding extends React.Component {
   render() {
     //console.log(this.photos)
     // console.log(photos)
-    let ratsList = [<img key={"bgimg"} id="specialBg" onClick={this.deselect.bind(this)} src={`/ratchelor/img/Photos/background.png`} alt="images on a table!"></img> ]
+    let ratsList = [<img key={"bgimg"} id="specialBg" onClick={this.deselect.bind(this)} src={`/ratchelor1/img/Photos/background.png`} alt="images on a table!"></img> ]
 
     // Create a clickable div for every rat in the game
     for (let i = 0; i < this.photos.length; i++) {
@@ -167,7 +167,7 @@ class SpecialEnding extends React.Component {
           paddingRight: (30* this.random(i+123)) +"px",
           transform: "rotate("+(this.random(i+22)*30) + "deg) scale(2.24) ",
          
-         }} src={"/ratchelor/img/Photos/"+this.photos[i]} alt=""/>
+         }} src={"/ratchelor1/img/Photos/"+this.photos[i]} alt=""/>
        
           </div>
           <div className="ratNameContainer">
